@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Generate Icon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" style="display:flex;">
+      <div class="col-10 colLeft">
+        <div class="contentimg">
+        <div class="bgimg" id="img"></div>
+      </div>
+      </div>
+      <div class="col-2 colRight">
+        <h4 class="title">Ajouter une image</h4>
+        <div class="image-upload">
+            <label for="file-input">
+                <img class="icon" src="https://cdn1.iconfinder.com/data/icons/files-folders-flat/512/file_directory__add_folder_-512.png"/>
+            </label>
+            <input id="file-input" type="file"/>
+        </div>
+           <h4 class="title">Taille de l'image</h4>
+           <input type="range" id="Range" min="18" max="1024">
+         <div class="size">
+           <span>L</span><input type="number" name="sizeWidth" id="sizeWidth" placeholder="largeur"/>
+           <span>H</span><input type="number" name="sizeHeight" id="sizeHeight" placeholder="hauteur"/>
+         </div>
+           <h4 class="title">Angles</h4>
+         <div class="angles">
+           <button class="btn btn-primary" id="arrondi"><i class="far fa-circle"></i></button>
+           <button class="btn btn-secondary" id="ronds"><i class="far fa-circle"></i></button>
+           <button class="btn btn-info" id="droits"><i class="far fa-square"></i></button>
+         </div>
+           <h4 class="title">Texte</h4>
+            <input type="range" id="RangeText" min="1" max="10">
+           <button class="btn btn-info" id="addtext"><span>Ajouter un Styley!!!!</span></button>
+           <input type="color" id="styleyColor">
+           <h4 class="title">Fond</h4>
+          <div class="picker">
+           <input type="color" id="color">
+          </div>
+             <button class="btn btn-danger" id="exportJPG">Exporter jpg</button>
+      </div>
+      </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="./draggable.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="./renderer.js"></script>
+</html>
